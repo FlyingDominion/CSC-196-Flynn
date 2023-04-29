@@ -3,15 +3,32 @@
 	<head>
 		<title>Fancify Shamcify</title>
 
-		<!-- link to your script file here -->
-		
+		<script src="fancifymytext.js"></script>
+		<style type="text/css">
+			.fieldset-auto-width {display: inline-block;}
+		</style>
 	</head>
 
 	<body>
 		<h1>Fancify my Text</h1>
 		<p>This page is under construction.</p>
-
-		<!-- Your UI controls go here -->
+		
+		<fieldset class="fieldset-auto-width">
+			<label>Text</label><br>
+			<textarea rows=4 cols=30 id="text">Input your text here.</textarea>
+			<br>
+		</fieldset> 
+		<br>
+		<fieldset class="fieldset-auto-width">
+			<label>Fancify</label><br>
+			<button id="bigger" onclick="bigger()">Bigger!</button>
+			<button id="moo" onclick="moo()">Moo</button>
+			<input type="radio" name="fanciness" id="fancy" onchange="fancify(); radioChange()">
+				FancyShmancy</radio>
+			<input type="radio" name="fanciness" id="boring" onchange="bore(); radioChange()">
+				BoringBetty</radio>
+			<br>
+		</fieldset> 
 		
 	</body>
 </html>
